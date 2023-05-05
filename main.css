@@ -1,0 +1,561 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #333;
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+  }
+
+body {
+   max-width: 450px;
+   margin: auto;
+   height: 1500px;
+}   
+
+.title__registrater--spotify__icon {
+    font-size: 45px;
+}
+
+/* css something */
+.form-lable {
+    padding-bottom: 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* for input css*/
+.input-height {
+    height: 48px;
+}
+
+.input-withMax {
+    width: 100%;
+}
+
+.input-padding-8-14px {
+    padding: 8px 14px;
+}
+
+input[type] {
+    border: none;
+    box-shadow: inset 0 0 0 0.5px;
+    border-radius: 4px;
+    transition: 0.1s;
+    font-size: 15.5px;
+    transition: 0.2s;
+}
+
+input[type]:hover {
+    box-shadow: inset 0 0 0 1.1px;
+}
+
+input[type]:focus {
+    box-shadow: inset 0 0 0 2.5px;
+}
+
+/* for select css */
+select {
+    border: none;
+    box-shadow: inset 0 0 0 0.5px;
+    border-radius: 4px;
+    transition: 0.1s;
+    font-size: 15.5px;
+    transition: 0.2s;
+}
+
+select:hover {
+    box-shadow: inset 0 0 0 1.1px;
+}
+
+select:focus {
+    box-shadow: inset 0 0 0 2.5px;
+}
+
+
+
+option {
+    font-size: 17px;
+}
+/* end */
+
+
+/* end */
+
+
+.title__registrater--spotify__cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+}
+
+.title__registrater--spotify {
+    padding: 40px 0 37px 0;
+}
+
+.title__spotify {
+    font-size: 27px;
+    font-weight: 600;
+    padding-left: 5px;
+    letter-spacing: -1px;
+}
+
+.title__registrater--listening {
+    text-align: center;
+    letter-spacing: -0.15em;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.button__google--signUp,
+.button__facebook--signUp {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.google--spotify,
+.facebook--spotify {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 48px;
+    width: 394px;
+    border-radius: 500px;
+    cursor: pointer;
+    transition-duration: 0.1s;
+}
+
+.facebook--spotify {
+    border: none;
+    background-color: #405A93 !important;
+    color: #fff;
+}
+
+.facebook--spotify > h2 {
+    transition: 0.1s ease-in-out;
+}
+
+.facebook--spotify:hover > h2 {
+    font-size: 16px;
+}
+
+.google--spotify {
+    border-radius: 500px;
+    background-color: #fff;
+}
+
+.google--spotify > h2 {
+    color: #535353 ;
+    transition: 0.1s ease-in-out;
+}
+
+.google--spotify:hover > h2 {
+    font-size: 16px;
+}
+
+.google--spotify:hover,
+.facebook--spotify:hover {
+   background-color: #f7f9f8; 
+   width: 400px;
+   font-size: 20px ;
+}
+
+.google--spotify-icon,
+.facebook--spotify-icon {
+    height: 46px;
+    font-size: 22px;
+    padding-right: 12px;
+}
+
+.google--spotify-icon {
+    color: crimson;
+}
+
+.size-h2--media > h2 {
+    font-size: 15px;
+}
+
+.or {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15.8px;
+    margin: 0 33.75px 16px;
+    color: rgb(127, 127, 127);
+}
+
+.or::before {
+    display: block;
+    content: "";
+    position: relative;
+    height: 1px;
+    width: 160px;
+    top: 1rem;
+    background-color:  rgb(204, 204, 204);
+}
+
+.or::after {
+    display: block;
+    content: "";
+    position: relative;
+    height: 1px;
+    width: 160px;
+    top: 1rem;
+    background-color: rgb(204, 204, 204);
+}
+
+
+/* Form group */
+.form-group {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: 24px;
+}
+
+.use__phoneNumber {
+    padding-top: 8px;
+    font-size: 14px;
+    color: #117a37;
+    font-weight: 600;
+}
+
+.form-message--cover {
+    display: flex;
+    align-items: center;
+}
+
+.form-message {
+    display: none;
+}
+
+
+.form-group.invalid .form-message--error {
+    display: block;
+}
+
+/* css form focus input appearence invalid by red color */
+.form-group.invalid .form-control{
+    border: none;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 1px #f33a58;
+    transition: 0.2s;
+}
+
+.form-group.invalid .form-control:hover{
+    box-shadow: inset 0 0 0 2px #f33a58;
+}
+
+.form-group.invalid .form-control:focus{
+    box-shadow: inset 0 0 0 3.5px #f33a58;
+    outline: #f33a58;
+}
+
+/* css form messenger  */
+.form-message--error {
+    margin-right: 4px;
+    font-size: 16px;
+    display: none;
+}
+
+.form-group.invalid .form-message {
+    display: block;
+    color: #f33a58;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* end */
+
+
+/* Form date */
+.form-group__Date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group__date--yourDate {
+    padding-bottom: 8px;
+}
+
+.form-group__date--yourDate-label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-message__date-container {
+    margin-bottom: 24px;
+}
+
+.date-month__min-width {
+    min-width: 45%;
+}
+
+.date-month-selection {
+    padding: 8px 44px 8px 14px;
+    appearance: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-message__date {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #f33a58;
+    font-weight: 600;
+}
+
+.form-message__date-error {
+    font-size: 16px;
+    margin-right: 4px;
+}
+
+/* css form focus input appearence invalid by red color */
+.form-group--date__valid.invalid .form-message__date-none {
+    display: block;
+}
+
+.form-group--date__valid.invalid .form-control--date {
+    border: none;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 1px #f33a58;
+    transition: 0.2s;
+}
+.form-group--date__valid.invalid .form-control--date:hover  {
+    box-shadow: inset 0 0 0 2px #f33a58;
+}
+
+.form-group--date__valid.invalid .form-control--date:focus {
+    box-shadow: inset 0 0 0 3.5px #f33a58;
+    outline: #f33a58;
+}
+
+
+/* end */
+
+/* Form gender */
+
+.title-gender {
+    padding-bottom: 8px;
+}
+
+.select-gender {
+    display: flex;
+    padding-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.flex-date {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+}
+
+.formGender {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 0;
+}
+
+.formGender > label {
+    padding: 0 24px 0 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.gender-radio {
+    width: 16px;
+    height: 16px;
+}
+
+.formGender input {
+    opacity: 0;
+}
+
+.formGender input:checked ~ .check-radio--mark {
+    transition: 0.1s ease-in-out;
+    background-color: #169b45;
+    border: 1px solid #169b45;
+}
+
+.formGender:hover input ~ .check-radio--mark {
+    border: 1px solid #169b45;
+}
+
+.check-radio--mark {
+    position: relative;
+    top: 0;
+    left: -16px;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: 1px solid #878787;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check-radio--mark::after {
+    display: block;
+    content: "";
+    width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+/* Deal with error message gender */
+.formGender--message.invalid {
+    display: block;
+}
+
+.formGender--message {
+    margin-top: 5.6px;
+    display: none;
+}
+
+.form-messageGender--cover {
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    color: #f33a58;
+}
+
+.form-messageGender--error {
+    margin-right: 4px;
+}
+
+/* end */
+
+/* Check box */
+
+.formCheckBox {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.formCheckBox > label {
+    padding: 0 0 24px 0px;
+    font-size: 13.4px;
+    font-weight: 600;
+}
+
+.form-appearance {
+    margin-top: 8px;
+    font-size: 14.5px;
+    color: rgb(24, 24, 24);
+}
+
+.agree-checkbox {
+    min-width: 16px;
+    height: 16px;
+}
+
+.formCheckBox input {
+    opacity: 0;
+}
+
+.formCheckBox input:checked ~ .check-checkbox--tick {
+    transition: 0.1s ease-in-out;
+    background-color: #169b45;
+    border: 1px solid #169b45;
+}
+
+.formCheckBox:hover input ~ .check-checkbox--tick {
+    transition: 0.1s ease-in-out;
+    border: 1px solid #169b45;
+}
+
+.check-checkbox--tick {
+    position: relative;
+    top: -12.5px;
+    left: -16px;
+    min-width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: 1px solid #878787;
+    transition: 0.1s ease-in-out;
+    border-radius: 3px;
+}
+
+.check-checkbox--tick::after {
+    display: block;
+    content: "";
+    width: 3.6px;
+    height: 8px;
+    border: solid white;
+    border-width: 0px 2.35px 2px 0px;
+    transform: rotate(45deg);
+    position: relative;
+    top: 1.3px;
+    right: -4.5px;
+}
+/* end */
+
+
+/* Form submit */
+.formConfirm {
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+.form-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.btn__form-submit {
+    height: 56px;
+    width: 160px;
+    border: none;
+    border-radius: 500px;
+    background-color: #1ed760;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn__form-submit:hover {
+    width: 165px;
+}
+
+.btn__form-submit--span {
+    font-weight: 700;
+    font-size: 18px ;
+}
+
+.condition,
+.Privacy {
+    color: rgb(29, 185, 84);
+}
+
+.haveAcount {
+    text-align: center;
+    font-size: 16.5px;
+}
+
+.haveAcount > a {
+    color: rgb(29, 185, 84);
+}
+/* end */
+
+/* reponsive sreen for mobile */
+@media (max-width: 768px) {
+    body {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}

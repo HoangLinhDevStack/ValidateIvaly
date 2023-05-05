@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./LibraryCss/fontawesome-free-6.1.1-web/css/all.css">
+    <title>Form Spotify</title>
+</head>
+
+<body>
+
+    <div class="cover">
+
+        <header>
+            <div class="title__registrater--spotify">
+
+                <div class="title__registrater--spotify__cover">
+                    <div class="title__registrater--spotify__icon">
+                        <i class="fa-brands fa-spotify"></i>
+                    </div>
+                    <span class="title__spotify">Ivaly</span>
+                </div>
+
+                <div class="title__registrater--listening">
+                    <h1>Sign up for free to start listening.</h1>
+                </div>
+
+            </div>
+
+            <div class="button__facebook--signUp">
+                <button class="facebook--spotify size-h2--media">
+                    <div class="facebook--spotify-icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+
+                    <h2>Sign up with Facebook</h2>
+                </button>
+            </div>
+
+            <div class="button__google--signUp">
+                <button class="google--spotify size-h2--media">
+                    <div class="google--spotify-icon">
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+
+                    <h2>Sign up with Google</h2>
+                </button>
+            </div>
+
+        </header>
+
+        <span class="or">or</span>
+
+        <!--! Form take data user -->
+        <form action="" method="post" class="" id="form-1">
+
+            <label class="form-group">
+                <lable class="form-lable">What's your email?</lable>
+                <input type="text" name="userEmail" id="email" placeholder="Enter your email."
+                    class="form-control input-height input-withMax input-padding-8-14px">
+                <div class="form-message">
+                    <!-- should be create div tag to do none -->
+                    <div class="form-message--cover">
+                        <div class="form-message--error">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                        </div>
+                        <span class="form-message--notice"></span>
+                    </div>
+                </div>
+                <a href="" class="use__phoneNumber">Use phone number instead.</a>
+            </label>
+
+            <label class="form-group">
+                <lable class="form-lable">Confirm your email</lable>
+                <input type="text" name="userConfirmEmail" id="confirmation-email" placeholder="Enter your email again."
+                    class="form-control input-height input-withMax input-padding-8-14px">
+                <div class="form-message">
+                    <div class="form-message--cover">
+                        <div class="form-message--error">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                        </div>
+                        <span class="form-message--notice">You need to enter your email.</span>
+                    </div>
+                </div>
+            </label>
+
+            <label class="form-group">
+                <lable class="form-lable">Create a password</lable>
+                <input type="password" name="userPassword" id="password" placeholder="Create your password."
+                    class="form-control input-height input-withMax input-padding-8-14px">
+                <div class="form-message">
+                    <div class="form-message--cover">
+                        <div class="form-message--error">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                        </div>
+                        <span class="form-message--notice">You need to enter your email.</span>
+                    </div>
+                </div>
+            </label>
+
+            <label class="form-group">
+                <lable class="form-lable">What should we call you?</lable>
+                <input type="text" name="userCallName" id="call-yourname" placeholder="Enter a profile name."
+                    class="form-control input-height input-withMax input-padding-8-14px">
+                <div class="form-message">
+                    <div class="form-message--cover">
+                        <div class="form-message--error">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                        </div>
+                        <span class="form-message--notice">You need to enter your email.</span>
+                    </div>
+                </div>
+                <span class="form-appearance">This appears on your profile.</span>
+            </label>
+
+            <!--! Tag for date user -->
+            <div class="form-group__date--yourDate">
+                <label for="" class="form-group__date--yourDate-label">
+                    What's your date of birth?
+                </label>
+            </div>
+
+            <div class="form-group__Date-container">
+
+                <div class="form-group__Date">
+                    <!--! Enter a valid day of the month. -->
+                    <div class="form-group--date__valid flex-date">
+                        <label class="form-lable" for="date-day">Day</label>
+                        <input type="text" placeholder="DD" maxlength="2" id="date-day"
+                            class="form-control--date input-height input-padding-8-14px" name="dateUserDay">
+                    </div>
+
+                    <!--! Select your birth month. -->
+                    <div class="form-group--date__valid flex-date date-month__min-width">
+                        <label class="form-lable" for="date-month">Month</label>
+                        <select name="dateUserMonth" id="date-month" class="form-control--date date-month-selection input-height">
+                            <option selected disabled value>Month</option>
+                            <option value="1">January</option>
+                            <option value="2">Febuary</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                    </div>
+
+                    <!--! Enter a valid year. -->
+                    <div class="form-group--date__valid flex-date">
+                        <label class="form-lable" for="date-year">Year</label>
+                        <input type="text" placeholder="YYYY" maxlength="4" id="date-year"
+                            class="form-control--date input-height input-padding-8-14px" name="dateUserYear">
+                    </div>
+
+                </div>
+
+                <div class="form-message__date-container">
+                    <div class="form-message__date-none"></div>
+                    <div class="form-message__date-none"></div>
+                    <div class="form-message__date-none"></div>
+                </div>
+
+            </div>
+
+
+
+            <div class="form-gender">
+                <div class="title-gender">
+                    <span class="title-gender__notice">What's your gender?</span>
+                </div>
+
+                <div class="select-gender">
+                    <label class="formGender">
+                        <input type="radio" name="gender" class="gender-radio" id="gender-radio--male" value="Male">
+                        <span class="check-radio--mark"></span>
+                        <label for="gender-radio--male">Male</label>
+                    </label>
+
+                    <label class="formGender">
+                        <input type="radio" name="gender" class="gender-radio" id="gender-radio--female" value="Female">
+                        <span class="check-radio--mark"></span>
+                        <label for="gender-radio--female">Female</label>
+                    </label>
+
+                    <label class="formGender">
+                        <input type="radio" name="gender" class="gender-radio" id="gender-radio--none" value="Non-binary">
+                        <span class="check-radio--mark"></span>
+                        <label for="gender-radio--none">Non-binary</label>
+                    </label>
+
+                    <label class="formGender">
+                        <input type="radio" name="gender" class="gender-radio" id="gender-radio--other" value="Other">
+                        <span class="check-radio--mark"></span>
+                        <label for="gender-radio--other">Other</label>
+                    </label>
+
+                    <label class="formGender">
+                        <input type="radio" name="gender" class="gender-radio" id="gender-radio--notsay" value="Prefer not to say">
+                        <span class="check-radio--mark"></span>
+                        <label for="gender-radio--notsay">Prefer not to say</label>
+                    </label>
+
+                    <!--! fix one  -->
+                    <label class="formGender--message"> 
+                        <div class="form-messageGender">
+                            <div class="form-messageGender--cover">
+                                <div class="form-messageGender--error">
+                                    <i class="fa-solid fa-circle-exclamation"></i>
+                                </div>
+                                <span class="form-messageGender--notice"></span>
+                            </div>
+                        </div>
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-chosse--agree">
+                <label class="formCheckBox">
+                    <input type="checkbox" name="checkboxForAgree" id="agree-checkbox--message" class="agree-checkbox" value="1">
+                    <span class="check-checkbox--tick"></span>
+                    <label for="agree-checkbox--message">I would prefer not to receive marketing messages from
+                        Spotify</label>
+                </label>
+
+                <label class="formCheckBox">
+                    <input type="checkbox" name="checkboxForAgree" id="agree-checkbox--share" class="agree-checkbox" value="2">
+                    <span class="check-checkbox--tick"></span>
+                    <label for="agree-checkbox--share">Share my registration data with Spotify's content providers for
+                        marketing purposes.</label>
+                </label>
+            </div>
+
+
+            <div class="formConfirm">
+                <p class="agreeCondition">
+                    <span class="agreeCondition__photoGraph">
+                        By clicking on sign-up, you agree to Spotify's
+                        <a href="" class="condition">Terms and Conditions of Use</a>
+                    </span>
+                    .
+                </p>
+            </div>
+
+            <div class="formConfirm">
+                <p class="agreePrivacy">
+                    <span class="agreeCondition__learnMore">
+                        To learn more about how Spotify collects, uses, shares and protects your personal data, please
+                        see
+                        <a href="" class="Privacy">Spotify's Privacy Policy</a>
+                    </span>
+                    .
+                </p>
+            </div>
+
+            <div class="form-submit">
+                <button class="btn__form-submit">
+                    <span class="btn__form-submit--span">Sign Up</span>
+                </button>
+            </div>
+
+            <p class="haveAcount">
+                Have an account?
+                <a href="" class="">Log in</a>
+            </p>
+
+        </form>
+    </div>
+
+    <script src="./validateMusic.js"></script>
+    <script src="./formMusic.js"></script>
+
+</body>
+
+</html>
